@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "VK Add Emoji smileys",
+  "version": "0.2.1",
+  
+  "icons": {
+    "128": "icon_128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [ "http://vk.com/*","https://vk.com/*", "http://new.vk.com/*","https://new.vk.com/*" ],
+      "js": ["content.js" ],
+      "all_frames": true
+    }
+  ],
+  
+      "browser_action": {
+        "default_title": "VK Add Emoji smileys",
+        "default_icon": "icon_19.png",
+        "default_popup": "popup.html"
+    }
+}
